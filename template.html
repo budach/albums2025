@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Album Ratings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="filter-container">
+            <h2>
+                2025 Album Ranking
+                <span class="rating-info-trigger" id="ratingInfoTrigger" role="tooltip" tabindex="0">
+                    ?
+                    <div class="rating-tooltip" id="ratingTooltip">
+                        <p><strong>Rating Scheme</strong></p>
+                        <p><strong>5/5</strong> - amazing - AOTY contender</p>
+                        <p><strong>4/5</strong> - great - very memorable</p>
+                        <p><strong>3/5</strong> - pretty good - would listen again</p>
+                        <p><strong>2/5</strong> - forgettable - won't listen again</p>
+                        <p><strong>1/5</strong> - bad - has major issues</p>
+                    </div>
+                </span>
+            </h2>
+        </div>
+        <ol class="album-list">
+            <!--PLACEHOLDER_ALBUM_LIST-->
+        </ol>
+        <div class="chart-container">
+            <h2 style="margin-top: 30px;">What's The Best Genre?</h2>
+            <canvas id="genreChart"></canvas>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
